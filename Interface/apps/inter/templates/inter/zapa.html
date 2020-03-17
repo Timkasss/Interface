@@ -1,0 +1,216 @@
+{% extends "inter/wrapper.html" %}
+
+{% block content %}
+<div class="col">
+  <FORM>
+    <div class="col">
+      <h1 align = "center">Відомості про нарахування заробітної плати</h1>
+      <p>
+         Вихідний номер страхувальника:
+         <input name = "number" type = text value = "12" size = 4>
+       </p>
+       Код на ЄДРПОУ реєстраційний номер облікової картки платника податків:
+       <INPUT name="key" type=text value="2937408698" size=10> 
+<br> 
+<br> 
+Найменування страхувальника:
+<INPUT name="name" type="text" size=50 value="Данилишин Володимир Володимирович"> 
+<br> 
+<br> 
+Звітній місяць:
+<SELECT NAME="moon"> 
+
+<OPTION VALUE=1>1</OPTION> 
+
+<OPTION VALUE=2>2</OPTION> 
+
+<OPTION VALUE=3>3</OPTION> 
+
+<OPTION VALUE=4>4</OPTION> 
+
+<OPTION VALUE=5>5</OPTION> 
+
+<OPTION VALUE=6>6</OPTION> 
+
+<OPTION VALUE=7>7</OPTION> 
+
+<OPTION VALUE=8>8</OPTION> 
+
+<OPTION VALUE=9>9</OPTION> 
+
+<OPTION VALUE=10>10</OPTION> 
+
+<OPTION VALUE=11>11</OPTION> 
+
+<OPTION VALUE=12>12</OPTION> 
+
+</SELECT>
+<INPUT name="year" type=text value="2014" size=4> 
+
+<br><br> 
+Тип:
+<INPUT name="tip" type="radio" value="1" checked>початкова 
+
+<INPUT name="tip" type="radio" value="0">скасовуюча 
+
+<br><hr> 
+Громадянин(-ка) України:
+<INPUT name="gromad" type="radio" value="1" checked>так 
+
+<INPUT name="gromad" type="radio" value="0">ні 
+
+<br><br>
+Стать: 
+<SELECT NAME="sex"> 
+
+<OPTION VALUE=1>жін</OPTION> 
+
+<OPTION VALUE=2>чол</OPTION> 
+
+</SELECT> 
+
+<br><br> 
+Номер облікової картки застрахованої особи:
+<INPUT name="num_card" type=text value="" size=10> 
+
+<br><hr> 
+Код категорії застрахованої особи:
+<SELECT NAME="category"> 
+
+<OPTION VALUE=3.6>наймані працівники на загальних підставах</OPTION> 
+
+<OPTION VALUE=3.6>працюючий інвалід</OPTION> 
+
+<OPTION VALUE=3.6>громадянин України, який працює за її межами</OPTION> 
+
+<OPTION VALUE=3.6>особа на виборній посаді</OPTION> 
+
+<OPTION VALUE=3.6>працівник воєнізованих формувань</OPTION> 
+
+<OPTION VALUE=3.6>особа на альтернативній службі</OPTION> 
+
+<OPTION VALUE=2.6> військовослужбовець, який не набув права на пенсію за вислугу років</OPTION> 
+
+<OPTION VALUE=2>особи, які отримують допомогу по тимчасовій непрацездатності</OPTION> 
+
+<OPTION VALUE=6.1>працюючий інвалід</OPTION> 
+
+<OPTION VALUE=2.6>особи, які працюють на підприємствах всеукраїнських громадських організацій інвалідів</OPTION> 
+
+<OPTION VALUE=0>інші</OPTION> 
+
+</SELECT> 
+
+<br><br> 
+Код типу нарахувань: сума доходу
+<SELECT NAME="count"> 
+
+<OPTION VALUE=1>за виконану роботу (надані послуги), строк виконання яких перевищує календарний місяць;</OPTION> 
+
+<OPTION VALUE=2>нарахована у попередніх звітних періодах, на яку страхувальником самостійно донараховано суму єдиного внеску;</OPTION> 
+
+<OPTION VALUE=3>на яку страхувальником самостійно зменшено зайво нараховану суму єдиного внеску;</OPTION> 
+
+<OPTION VALUE=4>на яку при перевірці органом Пенсійного фонду донараховано суму єдиного внеску;</OPTION> 
+
+<OPTION VALUE=5>на яку при перевірці органом Пенсійного фонду зменшено зайво нараховану суму єдиного внеску;</OPTION> 
+
+<OPTION VALUE=6>на яку страхувальником самостійно донараховано суму внесків на загальнообов'язкове державне пенсійне страхування за період до 1 січня 2011 року;</OPTION> 
+
+<OPTION VALUE=7> на яку страхувальником самостійно зменшено нараховану суму внесків на загальнообов'язкове державне пенсійне страхування за період до 1 січня 2011 року;</OPTION> 
+
+<OPTION VALUE=8>на яку при перевірці органом Пенсійного фонду донараховано суму внесків на загальнообов'язкове державне пенсійне страхування за період до 1 січня 2011 року;</OPTION> 
+
+<OPTION VALUE=9>на яку при перевірці органом Пенсійного фонду зменшено нараховану суму внесків на загальнообов'язкове державне пенсійне страхування за період до 1 січня 2011 року;</OPTION> 
+
+<OPTION VALUE=10>за дні відпустки</OPTION> 
+
+</SELECT> 
+
+<br><br>
+Місяць і рік, за який проведенно нарахування:
+<SELECT NAME="moon1"> 
+
+<OPTION VALUE=1>1</OPTION> 
+
+<OPTION VALUE=2>2</OPTION> 
+
+<OPTION VALUE=3>3</OPTION> 
+
+<OPTION VALUE=4>4</OPTION> 
+
+<OPTION VALUE=5>5</OPTION> 
+
+<OPTION VALUE=6>6</OPTION> 
+
+<OPTION VALUE=7>7</OPTION> 
+
+<OPTION VALUE=8>8</OPTION> 
+
+<OPTION VALUE=9>9</OPTION> 
+
+<OPTION VALUE=10>10</OPTION> 
+
+<OPTION VALUE=11>11</OPTION> 
+
+<OPTION VALUE=12>12</OPTION> 
+
+</SELECT> 
+
+
+
+<INPUT name="year1" type=text value="2014" size=4> 
+
+<br><br> 
+Прізвища , ім'я, по-батькові ЗО
+<INPUT name="name" type=text value="" size=22> 
+
+<br><hr> 
+Кількість календарних днів тимчасової непрацездатності:
+<INPUT name="day" type=text value="0" size=3> 
+
+<br><br> 
+Кількість календарних днів без збереження заробітної плати:
+<INPUT name="day1" type=text value="0" size=3> 
+
+<br><br> 
+Кількість календарних днів перебування у трудових відносинах протягом календарного звітнього місяця:
+<INPUT name="day2" type=text value="" size=3> 
+
+<br><hr> 
+Загальна сума нарахованої заробітної плати доходу (усього з початку звітньго місяця):
+
+<INPUT name="grn" type=text value="" size=6>грн 
+
+<INPUT name="kop" type=text value="" size=2>коп 
+
+<br><br> 
+Сума нарахованої заробітної плати у межах максимальної велечини, на яку нараховується єдиний внесок:
+
+<INPUT name="grn1" type=text value="" size=6>грн 
+
+<INPUT name="kop1" type=text value="" size=2>коп 
+
+<br><br> 
+Сума єдиного внеску за звітній місяць(із заробіної плати доходу):
+
+<INPUT name="grn2" type=text value="" size=6>грн 
+
+<INPUT name="kop2" type=text value="" size=2>коп 
+
+<br><hr> 
+Ознака наявності трудової книги:
+<INPUT name="book" type="radio" value="1" checked>так 
+<INPUT name="book" type="radio" value="0">ні 
+<br><br> 
+<INPUT name="chief" type=text value="Данилишин Володимир Володимирович" size=50> 
+<br><br> 
+<INPUT name="booker" type=text value="Грачова Тамара Йосипівна" size=50> 
+<br> 
+<INPUT type="submit" value="Записати"> 
+</div> 
+</FORM> 
+</div>
+
+{% endblock %}
+

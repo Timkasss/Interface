@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Мой сайт</title>
+	{% load static %}
+	<link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+	<link rel="stylesheet"  href="{% static 'css/site.css' %}" type="text/css">
+</head>
+<body>
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
+	<a href="{% url 'index' %}" class="navbar-brand d-flex align-items-center">
+	<img src="{% static 'images/logo2.png' %}" alt="логотип" width="60" height="60"><strong class="colortext">СТРАНИЦА ПРЕЗИДЕНТА</strong></a>
+  <h5 class="my-0 mr-md-auto font-weight-normal"></h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-white" href="{% url 'index' %}">ГЛАВНАЯ</a>
+    <a class="p-2 text-white" href="{% url 'onas' %}">О НАС</a>
+    <a class="p-2 text-white" href="{% url 'zapa' %}">ФОРМА</a>
+    <a class="p-2 text-white" href="#">КОНТАКТЫ</a>
+  </nav>
+  <a class="btn btn-outline-primary" href="{% url 'forma' %}">ВХОД</a>
+</div>
+	{% block glavnaya %}
+
+	{% endblock %}
+
+	{% block content %}
+
+	{% endblock %}
+
+	{% block onas %}
+
+	{% endblock %}
+	<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">&copy; 2020. Автор проекта: <span class="colortext">Біліченко Тимофій</span> 
+<span class="colortext2">priler96@gmail.com</span>
+  </div>
+</footer>
+
+</body>
+</html>
